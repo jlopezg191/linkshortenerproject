@@ -9,14 +9,11 @@ Core rules
 - Do not create new top-level files or large feature scaffolds without explicit approval.
 - Prefer minimal, focused edits that fix the root cause rather than broad refactors.
 - Preserve repository style and patterns; follow existing code conventions.
-- It is absolutely mandatory to read the relevant individual instruction files in [docs](docs) before generating or modifying any code. If a task touches authentication, UI, or other repo-specific behavior, the relevant docs file in [docs](docs) must be reviewed first.
 
 Repository specifics
 - Stack: Next.js (React + TypeScript). Keep TypeScript types correct and add types when touching code.
 - Scripts: validate changes using `npm run dev`, `npm run build`, `npm run start`, and `npm run lint`.
 - Database: The `db/` directory uses Drizzle conventions; consult `db/schema.ts` before modifying schema or migrations.
-- Authentication: This app uses Clerk for all auth flows. Follow the rules in [docs/authentication.md](docs/authentication.md) and do not introduce other auth methods.
-- UI: All UI elements must use shadcn/ui. Follow [docs/ui-components.md](docs/ui-components.md) and do not create custom components.
 
 Code style and linting
 - Run `npm run lint` before finalizing changes. Fix lint errors rather than bypassing rules.

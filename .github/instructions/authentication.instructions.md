@@ -1,3 +1,7 @@
+---
+description: Read this before making any authentication changes in the project.
+---
+
 # Authentication guidelines
 
 - This application uses Clerk for all authentication. Do not introduce other auth providers, custom session logic, or alternate sign-in flows.

@@ -1,3 +1,7 @@
+---
+description: Read this before making any UI changes in the project.
+---
+
 # UI component guidelines
 
 - All UI elements in this app must use shadcn/ui components.
